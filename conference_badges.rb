@@ -4,6 +4,7 @@ end
 
 
 def batch_badge_creator(array_of_names)
+  guests = ["Edsger", "Ada", "Charles", "Alan", "Grace", "Linus", "Matz"]
   new_array = []
   
   array_of_names.each do |name|
@@ -25,5 +26,12 @@ def assign_rooms(speakers)
 end 
 
 
-def printer
+def printer(guests)
+  batch_badge_creator(guests).each do |badge|
+    puts badge
+  end 
+  
+  assign_rooms(guests).each do |room|
+    puts room 
+  end 
 end 
