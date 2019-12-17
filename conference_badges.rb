@@ -14,7 +14,7 @@ end
 
 
 def assign_rooms(speakers)
-  new_array
+  new_array =[]
   counter = 1 
   
   speakers.each do |name|
